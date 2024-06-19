@@ -15,7 +15,7 @@ const Navbar = () => {
   };
 
   return (
-    <header className="flex items-center justify-between p-5 bg-gray-800 sticky top-0 z-50 border-b border-gray-700">
+    <header className="flex items-center justify-between p-5 bg-[#1b1b1a] sticky top-0 z-50 border-b border-gray-700">
       <div className="flex items-center">
         <a href="/" className="ml-5">
           <img className="h-14" loading="lazy" alt="Logo" src={logo} />
@@ -100,7 +100,7 @@ const Navbar = () => {
       <nav
         className={`${
           isSidebarOpen ? 'left-0' : '-left-full'
-        } lg:hidden top-0 bg-gray-800 text-white w-64 min-h-screen fixed overflow-y-auto transition-all duration-300 z-50`}
+        } lg:hidden top-0 bg-[#1b1b1a] text-white w-64 min-h-screen fixed overflow-y-auto transition-all duration-300 z-50`}
       >
         <div className="flex items-center justify-between p-5">
           <a href="/" className="ml-5">
