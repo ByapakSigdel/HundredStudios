@@ -5,7 +5,7 @@ import ContactPage from './pages/ContactPage';
 import ServicePage from './pages/ServicePage';
 import WorksPage from './pages/WorksPage';
 import AboutPage from './pages/AboutPage';
-import Navbar from './components/Navbar';
+
 
 function App() {
   return (
