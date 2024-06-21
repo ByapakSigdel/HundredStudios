@@ -9,8 +9,8 @@ import partnershipIcon from '../assets/partnershipIcon.svg'; // Dummy partnershi
 
 const Why100 = () => {
   return (
-    <div className="flex flex-col"> {/* Flex container for columns */}
-      <div className="w-full mb-8 md:mb-0"> {/* Full width on mobile, half width on desktop */}
+    <div className="flex flex-col items-center w-full"> {/* Center the entire container */}
+      <div className="w-full mb-8"> {/* Full width on mobile, auto width on desktop */}
         <TextBox
           imageUrl={textbox}
           heading="Why 100 Studios?"
@@ -18,36 +18,32 @@ const Why100 = () => {
           height="350px"
         />
       </div>
-      {/* Cards in two columns on larger screens, one column on smaller screens */}
-      <div className="flex flex-wrap justify-center ml-40">
-        <div className="w-full md:w-1/2 p-2"> {/* Full width on mobile, half width on desktop */}
-          <Card
-            icon={expIcon}
-            heading="Expertise"
-            paragraph="Our team consists of highly skilled professionals who have a deep understanding of the digital landscape. We stay updated with the latest industry trends and best practices to deliver cutting-edge solutions."
-          />
-        </div>
-        <div className="w-full md:w-1/2 p-2"> {/* Full width on mobile, half width on desktop */}
-          <Card
-            icon={clientIcon}
-            heading="Client-Centric Approach"
-            paragraph="We prioritize our clients and their unique needs. We listen to your ideas, challenges, and goals, and tailor our services to meet your specific requirements. Your success is our success."
-          />
-        </div>
-        <div className="w-full md:w-1/2 p-2"> {/* Full width on mobile, half width on desktop */}
-          <Card
-            icon={resultsIcon}
-            heading="Results-Driven Solutions"
-            paragraph="Our primary focus is on delivering results. We combine creativity and technical expertise to create digital products that drive business growth, enhance user experiences, and provide a competitive advantage."
-          />
-        </div>
-        <div className="w-full md:w-1/2 p-2"> {/* Full width on mobile, half width on desktop */}
-          <Card
-            icon={partnershipIcon}
-            heading="Collaborative Partnership"
-            paragraph="We value long-term relationships with our clients. We see ourselves as your digital partner, providing ongoing support, maintenance, and updates to ensure your digital products continue to thrive."
-          />
-        </div>
+      {/* Grid container for cards */}
+      <div className="grid grid-cols-1 md:grid-cols-2 w-full max-w-4xl gap-0 border border-gray-300"> {/* 1 column on mobile, 2 columns on desktop, no gap between items, and a border */}
+        <Card
+          icon={expIcon}
+          heading="Expertise"
+          paragraph="Our team consists of highly skilled professionals who have a deep understanding of the digital landscape. We stay updated with the latest industry trends and best practices to deliver cutting-edge solutions."
+          className="border border-gray-300" // Apply border to all sides
+        />
+        <Card
+          icon={clientIcon}
+          heading="Client-Centric Approach"
+          paragraph="We prioritize our clients and their unique needs. We listen to your ideas, challenges, and goals, and tailor our services to meet your specific requirements. Your success is our success."
+          className="border border-gray-300" // Apply border to all sides
+        />
+        <Card
+          icon={resultsIcon}
+          heading="Results-Driven Solutions"
+          paragraph="Our primary focus is on delivering results. We combine creativity and technical expertise to create digital products that drive business growth, enhance user experiences, and provide a competitive advantage."
+          className="border border-gray-300" // Apply border to all sides
+        />
+        <Card
+          icon={partnershipIcon}
+          heading="Collaborative Partnership"
+          paragraph="We value long-term relationships with our clients. We see ourselves as your digital partner, providing ongoing support, maintenance, and updates to ensure your digital products continue to thrive."
+          className="border border-gray-300" // Apply border to all sides
+        />
       </div>
     </div>
   );
