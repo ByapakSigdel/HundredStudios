@@ -64,7 +64,7 @@ const Footer = () => {
 
       {/* linearhundred Images */}
   {/* Background Images */}
-  <LinearHundered className="my-10" style={{ marginBottom: '0' }} />
+
 
 {/* Copyright Statement */}
 <div className="text-grey-60 mt-1 md:mt-0 text-sm md:text-base flex-grow">
