@@ -1,8 +1,8 @@
 import React from "react";
 import FooterMainBlock from "./FooterMainBlock";
-import icon15 from "../assets/icon-15.svg";
-import icon16 from "../assets/icon-16.svg";
-import icon17 from "../assets/icon-17.svg";
+import icon15 from "../assets/mailIcon.svg";
+import icon16 from "../assets/phoneIcon.svg";
+import icon17 from "../assets/locationIcon.svg";
 import LinearHundered from '../components/LinearHundered';
 
 const Footer = () => {
