@@ -24,13 +24,7 @@ const data = [
     class: 'Digital Marketing',
     description: 'A digital marketing project aimed at increasing online presence and engagement.'
   },
-  {
-    name: 'Project Four',
-    link: 'https://projectfour.com',
-    image: 'https://via.placeholder.com/150',
-    class: 'Project Management',
-    description: 'A project management initiative focused on efficient and effective project delivery.'
-  },
+
 ];
 
 export default function OurWorks() {
@@ -52,12 +46,16 @@ export default function OurWorks() {
       </div>
       <div className="w-4/5 grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3">
         {data.map((project, index) => (
-          <div key={index} className="border border-gray-300 p-4">
-            <img src={project.image} alt={project.name} className="w-full h-32 object-contain mb-4" />
-            <h2 className="text-xl font-bold mb-2">{project.name}</h2>
-            <p className="text-gray-700 mb-2">{project.class}</p>
-            <p className="text-gray-700 mb-4">{project.description}</p>
-            <a href={project.link} className="text-blue-500 underline">Learn more</a>
+          <div key={index} className="flex flex-col items-center border border-gray-300">
+            <div className="w-full border border-gray-300 p-2 text-center">
+              <p className="text-gray-700">{project.class}</p>
+            </div>
+            <div className="w-full border border-gray-300 p-4">
+              <img src={project.image} alt={project.name} className="w-full h-32 object-contain mb-4" />
+              <h2 className="text-xl font-bold mb-2">{project.name}</h2>
+              <p className="text-gray-700 mb-4">{project.description}</p>
+              <a href={project.link} className="text-blue-500 underline">Learn more</a>
+            </div>
           </div>
         ))}
       </div>
